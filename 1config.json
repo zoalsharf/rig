@@ -1,0 +1,29 @@
+{
+    "background": true,
+    "log-file": null,
+    "access-log-file": null,
+    "retries": 5,
+    "retry-pause": 5,
+    "donate-level": 2,
+    "coin": "xmr",
+    "custom-diff": 0,
+    "syslog": false,
+    "verbose": false,
+    "colors": true,
+    "workers": true,
+    "pools": [
+        {
+            "url": "xmr-eu.dwarfpool.com:8080",
+            "user": "49C3WWiMHvxhakkKtCLcEFJCHKFjJ8xwYHu56GkzuupyWD5dENsQBYRdxbxSvW9rZLVnCTKDETfFBWSLEzcdzLV7NWEwzwo",
+            "pass": "x"
+        }
+    ],
+    "bind": [
+        "0.0.0.0:8083"
+    ],
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}
