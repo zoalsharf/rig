@@ -16,7 +16,7 @@
     "threads": null,        // number of miner threads
     "pools": [
         {
-            "url": "ca.minexmr.com:5555",   // URL of mining server
+            "url": "xmr-eu.dwarfpool.com:8005",   // URL of mining server
             "user": "49C3WWiMHvxhakkKtCLcEFJCHKFjJ8xwYHu56GkzuupyWD5dENsQBYRdxbxSvW9rZLVnCTKDETfFBWSLEzcdzLV7NWEwzwo",                        // username for mining server
             "pass": "x",                       // password for mining server
             "keepalive": true,                 // send keepalived for prevent timeout (need pool support)
