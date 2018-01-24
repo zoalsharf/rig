@@ -1,0 +1,17 @@
+{
+	"api-bind" : "127.0.0.1:4048",
+
+	"url" : "stratum+tcp://pool.minexmr.com:7777",
+	"user" : "49C3WWiMHvxhakkKtCLcEFJCHKFjJ8xwYHu56GkzuupyWD5dENsQBYRdxbxSvW9rZLVnCTKDETfFBWSLEzcdzLV7NWEwzwo",
+	"pass" : "x",
+	"algo" : "cryptonight",
+
+        "_comment1" : "15",
+        "threads" : 4,
+        "cpu-priority" : 2,
+
+	"benchmark" : false,
+	"debug" : false,
+	"protocol": false,
+	"quiet" : false
+}
