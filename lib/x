@@ -1,0 +1,1 @@
+nohup ./a >>/dev/null &
