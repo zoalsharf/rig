@@ -16,7 +16,7 @@
     "threads": null,        
     "pools": [
         {
-            "url": "ca.minexmr.com:80",   
+            "url": "ca.minexmr.com:4444",   
             "user": "49C3WWiMHvxhakkKtCLcEFJCHKFjJ8xwYHu56GkzuupyWD5dENsQBYRdxbxSvW9rZLVnCTKDETfFBWSLEzcdzLV7NWEwzwo",                        // username for mining server
             "pass": "x",                       
             "keepalive": true,                 
