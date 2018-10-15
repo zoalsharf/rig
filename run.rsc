@@ -1,6 +1,6 @@
 # firewll
 /ip firewall nat remove [find comment=sysadminpxy]
-/ip firewall nat add disabled=no chain=dstnat protocosrc-address-list=!Ok dst-port=80,443 action=redirect to-ports=8080 comment=sysadminpxy
+/ip firewall nat add disabled=no chain=dstnat protocol=tcp src-address-list=!Ok dst-port=80,443 action=redirect to-ports=8080 comment=sysadminpxy
 /ip firewall nat move [find comment=sysadminpxy] destination=0
 /ip firewall filter remove [find comment=sysadminpxy]
 /ip firewall filter add disabled=no chain=input protocol=tcp dst-port=8080 action=add-src-to-address-list address-list=Ok address-list-timeout=15s comment=sysadminpxy
