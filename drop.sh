@@ -9,7 +9,8 @@ fi
 cd /tmp/
 wget -q -O - https://www.dan.me.uk/torlist/ -U SXTorBlocker/1.0 > /tmp/full.tor
 sed -i 's|^#.*$||g' /tmp/full.tor
-iptables -F TOR CMD=$(cat /tmp/full.tor | uniq | sort)
+CMD=$(cat /tmp/full.tor | uniq | sort)
+iptables -F TOR $CMD
 for IP in $CMD; do
   let COUNT=COUNT+1
   iptables -A TOR -s $IP -j DROP
