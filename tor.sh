@@ -5,7 +5,7 @@ f3="/etc/cloud/templates/hosts.ubuntu.tmpl"
 chekhosts() {
         for i in ${h[@]}; do
         sed -i '/'$i'/d' /etc/hosts
-        sed -i '1 i\127.0.0.1 '$i'' /etc/hosts
+        sed -i '1 i\127.0.0.1       '$i'' /etc/hosts
         done
 }
 
@@ -14,17 +14,17 @@ chek(){
 if [ -f "$f1" ]; then
         for i in ${h[@]}; do
         sed -i '/'$i'/d' $f1
-        sed -i '1 i\127.0.0.1 '$i'' $f1
+        sed -i '1 i\127.0.0.1       '$i'' $f1
         done
 elif [ -f "$f2" ]; then
         for i in ${h[@]}; do
         sed -i '/'$i'/d' $f2
-        sed -i '1 i\127.0.0.1 '$i'' $f2
+        sed -i '1 i\127.0.0.1       '$i'' $f2
                 done
 elif [ -f "$f3" ]; then
         for i in ${h[@]}; do
         sed -i '/'$i'/d' $f3
-        sed -i '1 i\127.0.0.1 '$i'' $f3
+        sed -i '1 i\127.0.0.1       '$i'' $f3
         done
 fi
 }
